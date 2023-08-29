@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://images.pexels.com/photos/3483098/pexels-photo-3483098.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.instruction {
+  margin: 16px 0px;
+}
+
+form {
+  max-width: 400px;
+  border: 0.5px solid rgba(193, 193, 193, 0.606);
+  border-radius: 30px;
+  padding: 20px;
+  margin: 30px auto;
+  background-color: rgb(249, 249, 249);
+  box-shadow: 0px 0px 20px #c5cbdc;
+}
+
+h3 {
+  margin: 20px 0px;
+}
+
+.contact__title {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact__information input,
+.payment__information input {
+  width: 230px;
+}
+
+.contact__information,
+.payment__information {
+  text-align: right;
+}
+
+fieldset {
+  width: 230px;
+  padding: 5px 10px;
+}
+
+.payment__information_card {
+  margin-right: 110px;
+}
+
+.required {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+.infoStyle {
+  padding-top: 10px;
+}
+
+button {
+  padding: 1px 3px;
+  background-color: rgb(249, 247, 245);
+  border-radius: 5px;
+  border: 1px solid grey;
+  font-size: 13px;
+}
+
+.btn {
+  text-align: center;
+  padding: 16px 0px;
+}

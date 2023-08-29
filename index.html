@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <form>
+          <h1>Payment form</h1>
+          <p class="instruction">Required fields are followed by <span class="required">*</span>.</p>
+          <div class="contact">
+            <h3>Contact information</h3>
+            <div class="contact__title">
+              <fieldset>
+                <legend>Title</legend>
+                <div>
+                  <label>
+                    <input type="radio" name="title" value="Mister" />
+                    Mister
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input type="radio" name="title" value="Miss" />
+                    Miss
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="contact__information">
+              <div class="contact__information_name infoStyle">
+                <label for="name">Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" autofocus required />
+              </div>
+              <div class="contact__information_email infoStyle">
+                <label for="email">E-mail: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="contact__information_password infoStyle">
+                <label for="password">Password: <span class="required">*</span></label>
+                <input type="password" id="password" required />
+              </div>
+            </div>
+          </div>
+          <div class="payment">
+            <h3>Payment information</h3>
+            <div class="payment__information">
+              <div class="payment__information_card infoStyle">
+                <label for="card-type">Card type: </label>
+                <select name="card-type" id="card-type">
+                  <option value="visa">Visa</option>
+                  <option value="mastercard">MasterCard</option>
+                  <option value="american-express">American Express</option>
+                  <option value="discover">Discover</option>
+                  <option value="paypal">PayPal</option>
+                </select>
+              </div>
+              <div class="payment__information_cardNumber infoStyle">
+                <label for="card-number">Card number: <span class="required">*</span></label>
+                <input type="tel" id="card-number" pattern="[0-9\s]{16,16}" inputmode="numeric" maxlength="16" required />
+              </div>
+              <div class="payment__information_cardExpiration infoStyle">
+                <label for="expiration-date">Expiration date: <span class="required">*</span></label>
+                <input type="text" min="2023-08" id="expiration-date" pattern="(0[1-9]|1[0-2])\/\d{2}" maxlength="5" placeholder="mm/yy" required />
+              </div>
+            </div>
+            <div class="btn">
+              <button type="submit">Validate the payment</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
